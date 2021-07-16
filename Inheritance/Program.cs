@@ -28,6 +28,24 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird robin = new Bird();
+            robin.AnimalKingdom = "Animalia";
+            robin.BirdName = "Robin";
+            robin.CanITRun = true;
+            robin.Class = "Aves";
+            robin.HasFeathers = true;
+            robin.Phylum = "Chordata";
+            robin.ItcanFly = true;
+
+            var mybird = new Animals[] { robin };
+
+            foreach (var Animals in mybird) 
+            {
+                Console.WriteLine(Animals.AnimalKingdom);
+                Console.WriteLine(robin.BirdName);
+                Console.WriteLine(robin.CanITRun);
+            }
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
